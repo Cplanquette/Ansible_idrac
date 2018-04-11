@@ -1,0 +1,12 @@
+---
+- hosts: all
+  connection: local
+  name: Get Installed Firmware Inventory
+  gather_facts: False
+
+  tasks:
+  - name: Get Installed Firmware Inventory
+    dellemc_get_firmware_inventory:
+       idrac_ip:        "{{ ip_idrac }}"
+       idrac_user:      "{{ user_idrac }}"
+       idrac_pwd:       "{{ pwd_idrac }}"
