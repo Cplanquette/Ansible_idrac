@@ -7,7 +7,7 @@
   tasks:
   - name: Get system inventory
     local_action:
-    dellemc_get_system_inventory:
-       idrac_ip:   "{{ ip_idrac }}"
-       idrac_user: "{{ user_idrac }}"
-       idrac_pwd:  "{{ pwd_idrac }}"
+      dellemc_get_system_inventory:
+         idrac_ip:   "{{ ip_idrac }}"
+         idrac_user: "{{ user_idrac }}"
+         idrac_pwd:  "{{ pwd_idrac }}"
